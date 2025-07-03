@@ -1,12 +1,2 @@
-#checking whether new_folder exists if not creating one called if_folder
-if (Test-Path -Path "new_folder") {
-    New-Item -Path "if_folder" -ItemType Directory
-}
 
-#checking if_folder exists, if it does create a folder called hyperiondev if not new projects
-if (Test-Path -Path "if_folder") {
-    New-Item -Path "hyperionDev" -ItemType Directory
-}
-else {
-    New-Item -Path "new-projects" -ItemType Directory
-}
+This repo contains the ps script for creating a new folder if one doesn't exist and if the newly created one exists, a folder called hyperion is created. Otherwise, is called newprojects.
